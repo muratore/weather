@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    background-color: #5c54ed;
+    padding: 2rem;
+    color: #fdfdfd;
+    box-shadow: rgba(0, 0, 0, .24) 0 3px 8px;
+    border-radius: 1rem;
+    max-width: 400px;
+}
+
+/* form */
+.form{
+    margin-bottom: 1rem;
+}
+.form-input-container{
+    display: flex;
+}
+.form h3{
+    margin-bottom: 1rem;
+}
+.form input{
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+}
+.form button{
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #8dd0f5;
+    color: #fdfdfd;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#loader,
+#weather-data{
+    border-top: 1px solid #fff;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+/* Loader */
+#loader i {
+    animation: rotate 1.5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#weather-data h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+#weather-data h2 i{
+    font-size: 1rem;
+}
+#weather-data h2 span{
+    margin: 0.6rem;
+}
+#country{
+    height: 15px;
+}
+#description{
+    text-transform: capitalize;
+}
+
+#description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+#details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#details-container #humidity{
+    border-right: 1px solid #fff;
+    margin: 0.6rem;
+    padding: 0.6rem;
+}
+
+/* Sugestions */
+.sugestions {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    
+
+}
+.sugestions p{
+    background-color: white;
+    padding: .5rem;
+    text-align: center;
+    width: calc((100% - 20px) / 3) ;
+    border-radius: .5rem;
+    color: #594cee;
+    cursor: pointer;
+    opacity: .9;
+    
+}
+
+.sugestions p:hover{
+    opacity: 1;
+}
+.hide{
+    display: none;
+}
