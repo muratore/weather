@@ -1,6 +1,6 @@
 
 // Api's
-const apiKey = "2f63dc45e3e6914edcfb72becdbc8c69";
+const apiKey = "yourApiKey";
 const apiCountryUrl = "https://countryflagsapi.com/png/";
 const iconUrl = "https://openweathermap.org/img/wn/"
 const getWeatherApi = "https://api.openweathermap.org/data/2.5/weather?q="
